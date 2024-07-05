@@ -118,6 +118,11 @@
       sqls = {
         enable = true;
       };
+
+      # css
+      cssls = {
+        enable = true;
+      };
     };
 
     keymaps = {

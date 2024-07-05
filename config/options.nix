@@ -66,7 +66,7 @@
     cursorline = true;
 
     # minimum number of lines to keep above and below cursor
-    scrolloff = 10;
+    scrolloff = 5;
 
     # highlight search matches
     hlsearch = true;

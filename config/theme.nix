@@ -4,7 +4,7 @@
 
 {
   # colorscheme
-  colorschemes.rose-pine.enable = true;
+  colorschemes.tokyonight.enable = true;
 
   # transparent
   plugins.transparent.enable = true;
