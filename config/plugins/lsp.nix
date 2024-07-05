@@ -119,6 +119,11 @@
         enable = true;
       };
 
+      # typescript
+      tsserver = {
+        enable = true;
+      };
+
       # css
       cssls = {
         enable = true;
