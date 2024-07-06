@@ -12,6 +12,7 @@
     ./mini.nix
     ./telescope.nix
     ./treesitter.nix
+    ./latex.nix
   ];
 
   # simple nixvim plugins
