@@ -35,7 +35,13 @@
       enable = true;
       signs = true;
     };
-  };
+
+    # indent guides
+    # https://nix-community.github.io/nixvim/plugins/indent-blankline/index.html
+    indent-blankline = {
+      enable = true;
+    };
+  }; 
 
   # simple vim plugins
   extraPlugins = with pkgs.vimPlugins; [
