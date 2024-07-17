@@ -6,7 +6,9 @@
 {
   plugins.treesitter = {
     enable = true;
-    ensureInstalled = "all"; # [ "bash" "c" ... ];
-    indent = true;
+    settings = {
+      ensure_installed = "all"; # [ "bash" "c" ... ];
+      indent.enable = true;
+    };
   };
 }

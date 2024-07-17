@@ -13,6 +13,7 @@
     ./telescope.nix
     ./treesitter.nix
     ./latex.nix
+    ./markdown.nix
   ];
 
   # simple nixvim plugins
