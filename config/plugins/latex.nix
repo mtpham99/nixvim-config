@@ -180,10 +180,10 @@
     }
   ];
 
-  plugins.which-key.registrations = {
-    "<leader>l" = {
-      name = "[L]aTeX";
-      _ = "which_key_ignore";
-    };
-  };
+  plugins.which-key.settings.spec = [
+    {
+      __unkeyed-1 = "<leader>l";
+      group = "[L]aTeX";
+    }
+  ];
 }
