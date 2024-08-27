@@ -10,29 +10,32 @@
   plugins.conform-nvim = {
     enable = true;
 
-    notifyOnError = false;
 
-    formatOnSave = ''
-      function(bufnr)
-        -- Disable "format_on_save lsp_fallback" for languages that don't
-        -- have a well standardized style. You can add add/remove
-        -- additional languages here.
-        local disable_filetypes = { c = true, cpp = true }
-        return {
-          timeout_ms = 500,
-          lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype]
-        }
-      end
-    '';
+    settings = {
+      notify_on_error = false;
 
-    formattersByFt = {
-      lua = [ "stylua" ];
+      format_on_save = ''
+        function(bufnr)
+          -- Disable "format_on_save lsp_fallback" for languages that don't
+          -- have a well standardized style. You can add add/remove
+          -- additional languages here.
+          local disable_filetypes = { c = true, cpp = true }
+          return {
+            timeout_ms = 500,
+            lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype]
+          }
+        end
+      '';
 
-      # conform can run multiple formatters sequentially
-      python = [ "isort" "black" ];
+      formatters_by_ft = {
+        lua = [ "stylua" ];
 
-      # use sublists to run *until* a formatter is found
-      # javascript = [ [ "prettierd" "prettier" ] ];
+        # conform can run multiple formatters sequentially
+        python = [ "isort" "black" ];
+
+        # use sublists to run *until* a formatter is found
+        # javascript = [ [ "prettierd" "prettier" ] ];
+      };
     };
   };
 
