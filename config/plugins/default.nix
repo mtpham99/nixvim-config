@@ -44,19 +44,12 @@
     indent-blankline = {
       enable = true;
     };
-  }; 
 
-  # simple vim plugins
-  extraPlugins = with pkgs.vimPlugins; [
-    # nice looking icons (requires nerd font)
-    nvim-web-devicons
-  ];
-
-  extraConfigLuaPre = ''
-    if vim.g.have_nerd_font then
-      require('nvim-web-devicons').setup {}
-    end
-  '';
+    # devicons
+    web-devicons = {
+      enable = true;
+    };
+  };
 
   # modeline
   # see `:help modeline`

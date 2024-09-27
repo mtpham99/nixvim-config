@@ -120,7 +120,7 @@
       };
 
       # typescript
-      tsserver = {
+      ts-ls = {
         enable = true;
       };
 
