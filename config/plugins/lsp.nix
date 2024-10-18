@@ -66,7 +66,7 @@
     #  - settings: Override the default settings passed when initializing the server.
     servers = {
       # lua
-      lua-ls = {
+      lua_ls = {
         enable = true;
       };
 
@@ -84,7 +84,7 @@
       };
 
       # rust
-      rust-analyzer = {
+      rust_analyzer = {
         enable = true;
 
         installCargo = true;
@@ -100,7 +100,7 @@
       dockerls = {
         enable = true;
       };
-      docker-compose-language-service = {
+      docker_compose_language_service = {
         enable = true;
       };
 
@@ -120,7 +120,7 @@
       };
 
       # typescript
-      ts-ls = {
+      ts_ls = {
         enable = true;
       };
 
