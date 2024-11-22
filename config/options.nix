@@ -16,8 +16,10 @@
 
   # local options
   opts = {
-    # tabs to spaces
-    expandtab = true;
+    # tabs
+    expandtab = false;
+    tabstop = 4;
+    shiftwidth = 4;
 
     # enable break indent
     breakindent = true;
