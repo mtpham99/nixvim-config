@@ -14,6 +14,7 @@
     ./treesitter.nix
     ./latex.nix
     ./markdown.nix
+    ./undotree.nix
   ];
 
   # simple nixvim plugins
