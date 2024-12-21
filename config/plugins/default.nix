@@ -15,6 +15,7 @@
     ./latex.nix
     ./markdown.nix
     ./undotree.nix
+    ./harpoon.nix
   ];
 
   # simple nixvim plugins

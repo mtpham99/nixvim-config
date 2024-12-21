@@ -54,7 +54,7 @@
     # visual mode
     {
       mode = "v";
-      key = "<leader>hs";
+      key = "<leader>gs";
       action.__raw = ''
         function()
           require('gitsigns').stage_hunk { vim.fn.line '.', vim.fn.line 'v' }
@@ -64,7 +64,7 @@
     }
     {
       mode = "v";
-      key = "<leader>hr";
+      key = "<leader>gr";
       action.__raw = ''
         function()
           require('gitsigns').reset_hunk { vim.fn.line '.', vim.fn.line 'v' }
@@ -75,7 +75,7 @@
     # normal mode
     {
       mode = "n";
-      key = "<leader>hs";
+      key = "<leader>gs";
       action.__raw = ''
         function()
           require('gitsigns').stage_hunk()
@@ -85,7 +85,7 @@
     }
     {
       mode = "n";
-      key = "<leader>hS";
+      key = "<leader>gS";
       action.__raw = ''
         function()
           require('gitsigns').stage_buffer()
@@ -95,7 +95,7 @@
     }
     {
       mode = "n";
-      key = "<leader>hu";
+      key = "<leader>gu";
       action.__raw = ''
         function()
           require('gitsigns').undo_stage_hunk()
@@ -105,7 +105,7 @@
     }
     {
       mode = "n";
-      key = "<leader>hR";
+      key = "<leader>gR";
       action.__raw = ''
         function()
           require('gitsigns').reset_buffer()
@@ -115,7 +115,7 @@
     }
     {
       mode = "n";
-      key = "<leader>hp";
+      key = "<leader>gp";
       action.__raw = ''
         function()
           require('gitsigns').preview_hunk()
@@ -125,7 +125,7 @@
     }
     {
       mode = "n";
-      key = "<leader>hb";
+      key = "<leader>gb";
       action.__raw = ''
         function()
           require('gitsigns').blame_line()
@@ -135,7 +135,7 @@
     }
     {
       mode = "n";
-      key = "<leader>hd";
+      key = "<leader>gd";
       action.__raw = ''
         function()
           require('gitsigns').diffthis()
@@ -145,7 +145,7 @@
     }
     {
       mode = "n";
-      key = "<leader>hD";
+      key = "<leader>gD";
       action.__raw = ''
         function()
           require('gitsigns').diffthis '@'

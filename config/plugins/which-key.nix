@@ -35,8 +35,8 @@
         group = "[T]oggle";
       }
       {
-        __unkeyed-1 = "<leader>h";
-        group = "Git [H]unk";
+        __unkeyed-1 = "<leader>g";
+        group = "[G]it Hunk";
       }
     ];
   };
