@@ -17,9 +17,9 @@
   # local options
   opts = {
     # tabs
-    expandtab = false;
-    tabstop = 4;
-    shiftwidth = 4;
+    expandtab = true;
+    tabstop = 2;
+    shiftwidth = 2;
 
     # enable break indent
     breakindent = true;
@@ -36,7 +36,7 @@
 
     # sync neovim and os clipboard
     clipboard = "unnamedplus";
- 
+
     # save undo history
     undofile = true;
 
