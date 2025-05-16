@@ -8,11 +8,10 @@
   plugins.harpoon = {
     enable = true;
     enableTelescope = config.plugins.telescope.enable;
-
-    keymaps = {
-      addFile = "<leader>ha";
-      toggleQuickMenu = "<leader>hl";
-    };
+    # keymaps = {
+    #   addFile = "<leader>ha";
+    #   toggleQuickMenu = "<leader>hl";
+    # };
   };
 
   plugins.which-key.settings.spec = [
@@ -25,15 +24,15 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>ha";
-      action.__raw = "require('harpoon.mark').add_file";
-      options.desc = "[a]dd mark";
+      key = "<leader>hl";
+      action.__raw = "function() require'harpoon'.ui:toggle_quick_menu(require'harpoon':list()) end";
+      options.desc = "toggle [l]ist";
     }
     {
       mode = "n";
-      key = "<leader>hl";
-      action.__raw = "require('harpoon.ui').toggle_quick_menu";
-      options.desc = "toggle [l]ist";
+      key = "<leader>ha";
+      action.__raw = "function() require'harpoon':list():add() end";
+      options.desc = "[a]dd mark";
     }
   ];
 }
