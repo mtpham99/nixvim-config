@@ -10,6 +10,8 @@
     })
     ./autocommands.nix
     ./keymaps.nix
+
+    ./plugins
   ];
 
   # extra lua config added at top and bottom of init.lua
