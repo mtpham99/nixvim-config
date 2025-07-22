@@ -10,6 +10,7 @@
     })
     ./autocommands.nix
     ./keymaps.nix
+    ./theme.nix
 
     ./plugins
   ];
